@@ -24,3 +24,37 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+@keyframes characterFloatOne {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes characterFloatTwo {
+  0%,
+  100% {
+    transform: translateY(-25px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.hero-character-one {
+  animation: characterFloatOne 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+.hero-character-two {
+  animation: characterFloatTwo 4.5s ease-in-out infinite;
+  will-change: transform;
+}
