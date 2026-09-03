@@ -72,7 +72,7 @@ export default function Contact() {
           href="https://wa.me/6289529002944?text=Hai%20admin%20magangjogja.com%2C%20saya%20ingin%20bertanya%20mengenai%20program%20magang."
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-3 inline-block text-4xl font-black text-[#d73472] transition-all duration-300 ease-in-out hover:scale-105 hover:text-black"
+          className="mt-3 inline-block text-3xl font-black text-[#d73472] transition-all duration-200 hover:scale-105 hover:text-black active:scale-95 active:text-black md:text-4xl"
         >
           0895 2900 2944
         </a>
