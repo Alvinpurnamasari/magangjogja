@@ -53,7 +53,7 @@ export default function Hero() {
           <span className="block">Kuy!</span>
         </h1>
 
-        <h2 className="mt-8 max-w-xl text-lg font-black uppercase leading-[1.15] text-[#176a58] md:text-xl">
+        <h2 className="mt-8 max-w-xl text-lg font-black uppercase leading-[1.15] text-[#176a58] md:text-l">
           Kamu siswa SMK atau mahasiswa? Cari tempat PKL, magang, prakerin, OJT
           atau praktik kerja?
         </h2>

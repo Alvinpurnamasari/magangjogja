@@ -21,7 +21,7 @@ export default function Facilities() {
     >
       <div className="mx-auto max-w-5xl">
       <div className="mb-16 text-center text-white">
-        <h2 className="text-3xl font-black uppercase leading-tight tracking-[0.2em] md:text-4xl">
+      <h2 className="font-[family-name:var(--font-luckiest-guy)] text-3xl uppercase leading-[1.1] tracking-[0.15em] md:text-4xl">
           Fasilitas yang
           <span className="block">Didapat</span>
         </h2>

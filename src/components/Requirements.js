@@ -30,7 +30,7 @@ const requirements = [
       <section id="syarat" className="bg-[#40c79a]">
         {/* Judul section */}
         <div className="border-y-[18px] border-[#df7478] bg-[#ffc857] px-6 py-8">
-          <h2 className="text-center text-3xl font-black uppercase tracking-[0.25em] text-white">
+          <h2 className="text-center text-2xl font-black uppercase tracking-[0.25em] text-white">
             Syarat dan Ketentuan
           </h2>
         </div>
