@@ -3,19 +3,19 @@ import Image from "next/image";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-[#38b98b]">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        <a href="#beranda" aria-label="Kembali ke halaman utama">
+      <nav className="mx-auto flex max-w-7xl flex-col items-center gap-5 px-6 py-5 xl:flex-row xl:justify-between">
+        <a href="#beranda">
           <Image
             src="/images/M1.png"
             alt="MagangJogja.com"
             width={552}
             height={63}
             priority
-            className="h-auto w-[260px] md:w-[350px]"
+            className="h-auto w-[280px] md:w-[350px]"
           />
         </a>
 
-        <div className="hidden items-center gap-8 font-bold text-white md:flex">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-center font-bold text-white">
           <a
             href="#syarat"
             className="transition hover:text-yellow-300"

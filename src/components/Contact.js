@@ -43,9 +43,8 @@ export default function Contact() {
         id="tentang"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        className="relative flex min-h-[800px] w-full flex-col bg-[#ffa63f] bg-cover bg-bottom bg-no-repeat px-6 pt-20 text-center text-white md:aspect-[2000/1299] md:min-h-0"
-        style={{
-          backgroundImage: "url('/images/beges.png')",
+        className="relative flex min-h-[800px] w-full scroll-mt-[190px] flex-col bg-[#ffa63f] bg-[length:auto_62%] bg-bottom bg-no-repeat px-4 pt-16 text-center text-white md:scroll-mt-[100px] md:aspect-[2000/1299] md:min-h-0 md:bg-cover md:px-6 md:pt-20" style={{
+        backgroundImage: "url('/images/beges.png')",
         }}
       >
       <div className="relative z-10 mx-auto max-w-6xl">
@@ -70,9 +69,9 @@ export default function Contact() {
         </h3>
 
         <a
-          href="https://wa.me/6289529002944"
+          href="https://wa.me/6289529002944?text=Hai%20admin%20magangjogja.com%2C%20saya%20ingin%20bertanya%20mengenai%20program%20magang."
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="mt-3 inline-block text-4xl font-black text-[#d73472] transition-all duration-300 ease-in-out hover:scale-105 hover:text-black"
         >
           0895 2900 2944
