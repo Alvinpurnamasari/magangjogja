@@ -10,10 +10,6 @@ const imageFields = [
     label: "Background Hero",
   },
   {
-    key: "hero_decoration_url",
-    label: "Ornamen Hero",
-  },
-  {
     key: "hero_character_one_url",
     label: "Karakter Ungu",
   },
