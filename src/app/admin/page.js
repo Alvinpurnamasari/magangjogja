@@ -5,7 +5,7 @@ import LogoutButton from "@/components/admin/LogoutButton";
 
 const menus = [
   {
-    title: "Hero Website",
+    title: "Halaman Utama",
     description: "Ubah judul, deskripsi, dan gambar utama.",
     href: "/admin/hero",
   },

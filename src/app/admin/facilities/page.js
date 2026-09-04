@@ -32,7 +32,7 @@ export default async function AdminFacilitiesPage() {
           href="/admin"
           className="font-bold text-[#38b98b] hover:underline"
         >
-          ← Kembali ke dashboard
+          ← Kembali ke Dashboard
         </Link>
 
         <div className="mt-6 rounded-3xl bg-white p-6 shadow-lg md:p-10">

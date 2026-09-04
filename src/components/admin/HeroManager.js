@@ -7,7 +7,7 @@ import { createClient } from "@/utils/supabase/client";
 const imageFields = [
   {
     key: "hero_background_url",
-    label: "Background Hero",
+    label: "Background Halaman Utama",
   },
   {
     key: "hero_character_one_url",
@@ -127,7 +127,7 @@ export default function HeroManager({ initialSettings }) {
     <form onSubmit={handleSubmit} className="mt-8 space-y-7">
       <div>
         <label className="mb-2 block font-bold text-gray-700">
-          Judul Hero
+          Judul Halaman Utama
         </label>
 
         <input
@@ -142,7 +142,7 @@ export default function HeroManager({ initialSettings }) {
 
       <div>
         <label className="mb-2 block font-bold text-gray-700">
-          Pertanyaan Hero
+          Pertanyaan Halaman Utama
         </label>
 
         <textarea
@@ -157,7 +157,7 @@ export default function HeroManager({ initialSettings }) {
 
       <div>
         <label className="mb-2 block font-bold text-gray-700">
-          Deskripsi Hero
+          Deskripsi Halaman Utama
         </label>
 
         <textarea
