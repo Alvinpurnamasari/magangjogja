@@ -207,32 +207,6 @@ export default function ContactManager({ initialSettings }) {
           />
         </div>
 
-        <div className="rounded-2xl border border-gray-200 p-5">
-          <p className="mb-4 font-bold text-gray-800">
-            Gambar Latar Kontak
-          </p>
-
-          {form.contact_background_url && (
-            <div className="relative mb-4 h-32 overflow-hidden rounded-xl bg-gray-100">
-              <Image
-                src={form.contact_background_url}
-                alt="Gambar latar kontak"
-                fill
-                unoptimized
-                className="object-cover"
-              />
-            </div>
-          )}
-
-          <input
-            type="file"
-            accept="image/png,image/jpeg,image/webp,image/svg+xml"
-            onChange={(event) =>
-              setBackgroundFile(event.target.files?.[0] ?? null)
-            }
-            className="w-full text-sm text-gray-700"
-          />
-        </div>
       </div>
 
       {message && (

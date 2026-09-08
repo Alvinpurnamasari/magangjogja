@@ -47,7 +47,7 @@ export default async function AdminContactPage( ) {
                     <h1 className="mt-1 text-3xl font-black text-[#17233b]">
                         Kontak
                     </h1>
-                </div>
+                
                 <p className="mt-2 text-gray-600">
                     Ubah nomer whatsapp, pesan otomatis, alamat, logo, dan gambar latar
                 </p>
@@ -59,6 +59,7 @@ export default async function AdminContactPage( ) {
                 ) : (
                     <ContactManager initialSettings={settings} />
                 )}
+                </div>
             </div>
         </main>
     );

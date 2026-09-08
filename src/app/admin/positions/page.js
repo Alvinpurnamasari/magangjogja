@@ -29,7 +29,7 @@ export default async function AdminPositionsPage() {
         <main className="min-h-screen bg-gray-100 px-6 py-10">
             <div className="mx-auto max-w-6xl">
                 <Link href="/admin" className="font-bold text-[#38b98b] hover:underline">
-                    Kembali ke Dashboard
+                ← Kembali ke Dashboard
                 </Link>
 
                 <div className="mt-6 rounded-3xl bg-white p-6 shadow-lg md:p-10">
@@ -37,12 +37,12 @@ export default async function AdminPositionsPage() {
                         Kelola Konten
                     </p>
 
-                    <h1 className="mt-1 text-3xl font-black text-[17233b]">
-                        Posisi Magang
+                    <h1 className="mt-1 text-3xl font-black text-[#17233b]">
+                        Formasi Magang
                     </h1>
 
                     <p className="mt-2 text-gray-600">
-                        Tambah, ubah, hapus, dan ganti gambar posisi magang.
+                        Tambah, edit, hapus, sembunyikan, dan ganti gambar formasi magang.
                     </p>
 
                     {error ? (

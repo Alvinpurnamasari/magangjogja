@@ -15,8 +15,8 @@ const menus = [
     href: "/admin/requirements",
   },
   {
-    title: "Posisi Magang",
-    description: "Kelola posisi dan gambar posisi magang.",
+    title: "Formasi Magang",
+    description: "Tambah, edit, dan hapus formasi magang.",
     href: "/admin/positions",
   },
   {

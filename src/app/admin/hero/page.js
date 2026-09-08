@@ -29,15 +29,16 @@ export default async function AdminHeroPage() {
 
     return(
         <main className="min-h-screen bg-gray-100 px-6 py-10">
-            <div className="mx-auto maz-w-5xl">
+            <div className="mx-auto max-w-6xl">
                 <Link href="/admin"
                 className="font-bold text-[#38b98b] hover:underline">← Kembali ke Dashboard
                 </Link>
 
                 <div className="mt-6 rounded-3xl bg-white p-6 shadow-lg md:p-10">
-                <h1 className="mt-6 rounded-3xl font-black text-gray-800">
-                    Kelola Hero Website
-                </h1>
+                    <p className="font-bold text-[#38b98b]">Kelola Konten</p>
+                    <h1 className="mt-1 text-3xl font-black text-[#17233b]">
+                        Kelola Halaman Utama Website
+                    </h1>
 
                 <p className="mt-2 text-gray-600">
                     Ubah tulisan dan gambar pada bagian utama website
@@ -45,7 +46,7 @@ export default async function AdminHeroPage() {
 
                 {error? (
                     <p className="mt-6 rounded-xl bg-red-100 p-4 text-red-700">
-                        Data Hero gagal dimuat.
+                        Data Halaman Utama gagal dimuat.
                     </p>
                 ) : (
                     <HeroManager initialSettings={settings} />

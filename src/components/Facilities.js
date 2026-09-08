@@ -21,10 +21,12 @@ export default async function Facilities() {
       }}
     >
       <div className="relative z-10 mx-auto max-w-5xl">
-        <h2 className="font-dk-display text-center text-3xl uppercase tracking-[0.15em] text-white md:text-4xl">
+        <div className="text-center text-white">
+        <h2 className="font-[family-name:var(--font-luckiest-guy)] text-3xl uppercase tracking-[0.15em] text-white md:text-4xl">
           Fasilitas yang
           <span className="block">didapat</span>
         </h2>
+        </div>
 
         <div className="mx-auto mt-8 h-[2px] max-w-xl bg-[#8b3e35]" />
 

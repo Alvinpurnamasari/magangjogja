@@ -48,12 +48,12 @@ export default function PositionsManager({ initialPositions }) {
     event.preventDefault();
 
     if (!newTitle.trim()) {
-      setMessage("Nama posisi magang harus diisi.");
+      setMessage("Nama formasi magang harus diisi.");
       return;
     }
 
     if (!newImage) {
-      setMessage("Pilih gambar posisi terlebih dahulu.");
+      setMessage("Pilih gambar formasi terlebih dahulu.");
       return;
     }
 
@@ -96,7 +96,7 @@ export default function PositionsManager({ initialPositions }) {
         fileInput.value = "";
       }
 
-      setMessage("Posisi magang berhasil ditambahkan.");
+      setMessage("Formasi magang berhasil ditambahkan.");
     } catch (error) {
       setMessage(`Gagal menambahkan posisi: ${error.message}`);
     } finally {
@@ -119,7 +119,7 @@ export default function PositionsManager({ initialPositions }) {
 
   async function handleSaveEdit(position) {
     if (!editTitle.trim()) {
-      setMessage("Nama posisi magang harus diisi.");
+      setMessage("Nama formasi magang harus diisi.");
       return;
     }
 
@@ -154,7 +154,7 @@ export default function PositionsManager({ initialPositions }) {
       );
 
       cancelEdit();
-      setMessage("Posisi magang berhasil diperbarui.");
+      setMessage("Formasi magang berhasil diperbarui.");
     } catch (error) {
       setMessage(`Gagal memperbarui posisi: ${error.message}`);
     } finally {
@@ -200,7 +200,7 @@ export default function PositionsManager({ initialPositions }) {
 
   async function handleDelete(position) {
     const confirmed = window.confirm(
-      `Yakin ingin menghapus posisi "${position.title}"?`
+      `Yakin ingin menghapus formasi "${position.title}"?`
     );
 
     if (!confirmed) {
@@ -224,7 +224,7 @@ export default function PositionsManager({ initialPositions }) {
         current.filter((item) => item.id !== position.id)
       );
 
-      setMessage("Posisi magang berhasil dihapus.");
+      setMessage("Formasi magang berhasil dihapus.");
     } catch (error) {
       setMessage(`Gagal menghapus posisi: ${error.message}`);
     } finally {
@@ -239,7 +239,7 @@ export default function PositionsManager({ initialPositions }) {
         className="rounded-2xl border border-gray-200 bg-gray-50 p-5"
       >
         <h2 className="text-xl font-black text-[#17233b]">
-          Tambah Posisi Baru
+          Tambah Formasi Baru
         </h2>
 
         <div className="mt-4 grid gap-4 md:grid-cols-[1fr_1fr_auto] md:items-end">
@@ -248,7 +248,7 @@ export default function PositionsManager({ initialPositions }) {
               htmlFor="new-position-title"
               className="mb-2 block font-bold text-gray-800"
             >
-              Nama Posisi
+              Nama Formasi
             </label>
 
             <input
@@ -268,7 +268,7 @@ export default function PositionsManager({ initialPositions }) {
               htmlFor="new-position-image"
               className="mb-2 block font-bold text-gray-800"
             >
-              Gambar Posisi
+              Gambar Formasi
             </label>
 
             <input
@@ -329,7 +329,7 @@ export default function PositionsManager({ initialPositions }) {
                 </div>
 
                 <label className="mt-4 block font-bold text-gray-800">
-                  Nama Posisi
+                  Nama Formasi
                 </label>
 
                 <input

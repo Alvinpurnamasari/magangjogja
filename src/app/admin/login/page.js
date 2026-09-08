@@ -31,6 +31,11 @@ export default function AdminLoginPage() {
       return;
     }
 
+    localStorage.setItem(
+      "admin_last_activity",
+      String(Date.now())
+    );
+
     router.push("/admin");
     router.refresh();
   }

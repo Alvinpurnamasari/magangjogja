@@ -46,7 +46,7 @@ export default async function Hero() {
       }}
     >
       <div className="relative mx-auto grid min-h-[810px] max-w-7xl gap-0 lg:grid-cols-2 lg:items-center lg:gap-8">
-        <div className="relative h-[390px] lg:h-[700px]">
+      <div className="relative h-[500px] md:h-[580px] lg:h-[700px]">
           <Image
             src={settings.hero_decoration_url}
             alt=""
@@ -56,10 +56,10 @@ export default async function Hero() {
             className="object-contain opacity-60"
           />
 
-          <div className="hero-character-one absolute -top-5 left-6 h-[330px] w-[330px] lg:top-auto lg:-bottom-8 lg:left-0 lg:h-[600px] lg:w-[600px]">
+        <div className="hero-character-one absolute -top-8 -left-14 h-[450px] w-[450px] sm:left-[2%] md:-top-12 md:left-[10%] md:h-[580px] md:w-[580px] lg:top-auto lg:-bottom-8 lg:left-0 lg:h-[600px] lg:w-[600px]">
             <Image
               src={settings.hero_character_one_url}
-              alt="Karakter Hero pertama"
+              alt="Karakter pertama"
               fill
               priority
               unoptimized
@@ -67,10 +67,10 @@ export default async function Hero() {
             />
           </div>
 
-          <div className="hero-character-two absolute top-0 right-4 h-[340px] w-[340px] lg:top-auto lg:-bottom-12 lg:right-0 lg:h-[620px] lg:w-[620px]">
+          <div className="hero-character-two absolute -top-4 -right-14 h-[460px] w-[460px] sm:right-[2%] md:-top-8 md:right-[8%] md:h-[600px] md:w-[600px] lg:top-auto lg:-bottom-12 lg:right-0 lg:h-[620px] lg:w-[620px]">
             <Image
               src={settings.hero_character_two_url}
-              alt="Karakter Hero kedua"
+              alt="Karakter kedua"
               fill
               priority
               unoptimized

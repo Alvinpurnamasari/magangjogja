@@ -6,16 +6,12 @@ import { createClient } from "@/utils/supabase/client";
 
 const imageFields = [
   {
-    key: "hero_background_url",
-    label: "Background Halaman Utama",
-  },
-  {
     key: "hero_character_one_url",
-    label: "Karakter Ungu",
+    label: "Karakter 1",
   },
   {
     key: "hero_character_two_url",
-    label: "Karakter Merah",
+    label: "Karakter 2",
   },
 ];
 
