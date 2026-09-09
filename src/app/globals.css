@@ -70,3 +70,44 @@ html {
   animation: characterFloatTwo 4.5s ease-in-out infinite;
   will-change: transform;
 }
+.font-dk-display {
+  font-family: var(--font-luckiest-guy);
+}
+@keyframes heroTitleUp {
+  from {
+    opacity: 0;
+    transform: translateY(90px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title-up {
+  animation: heroTitleUp 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes heroTextZoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.035);
+  }
+}
+
+.hero-text-zoom {
+  animation: heroTextZoom 2.5s ease-in-out 1s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-title-up,
+  .hero-text-zoom {
+    animation: none;
+  }
+}
+

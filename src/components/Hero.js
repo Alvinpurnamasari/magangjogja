@@ -80,7 +80,7 @@ export default async function Hero() {
         </div>
 
         <div className="relative z-10 -mt-8 pb-16 text-center lg:mt-0 lg:pb-0 lg:text-left">
-          <h1 className="font-[family-name:var(--font-luckiest-guy)] text-5xl uppercase leading-[1.05] tracking-[0.04em] text-white sm:text-6xl md:text-7xl lg:text-[96px]">
+      <h1 className="hero-title-up font-dk-display text-5xl uppercase leading-[1.05] tracking-[0.04em] text-white sm:text-6xl md:text-7xl lg:text-[96px]" >
             {firstTitle}
 
             {remainingTitle.length > 0 && (
@@ -90,13 +90,15 @@ export default async function Hero() {
             )}
           </h1>
 
-          <h2 className="mx-auto mt-6 max-w-xl text-base font-black uppercase leading-[1.15] text-[#176a58] lg:mx-0 lg:mt-8 lg:text-lg">
+           <div className="hero-text-zoom origin-center lg:origin-left">   
+          <h2 className="mx-auto mt-6 max-w-xl text-sans text-base font-black uppercase leading-[1.15] text-[#176a58] lg:mx-0 lg:mt-8 lg:text-lg">
             {settings.hero_question}
           </h2>
 
-          <p className="mx-auto mt-5 max-w-xl text-base font-bold leading-6 text-white lg:mx-0 lg:mt-7 lg:text-lg">
+          <p className="mx-auto mt-5 max-w-xl text-sans text-base font-bold leading-6 text-white lg:mx-0 lg:mt-7 lg:text-lg">
             {settings.hero_description}
           </p>
+          </div>
         </div>
       </div>
     </section>

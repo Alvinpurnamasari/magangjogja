@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { createClient } from "@/utils/supabase/server";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default async function Positions() {
   const supabase = await createClient();
@@ -17,9 +18,9 @@ export default async function Positions() {
   return (
     <section
       id="posisi"
-      className="relative overflow-hidden bg-[#ffc857] px-6 py-20"
+      className="relative overflow-hidden bg-[#ffc857] pt-20"
     >
-      <div className="relative z-10 mx-auto max-w-7xl">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pb-20">
         <div className="text-center text-white">
           <h2 className="font-[family-name:var(--font-luckiest-guy)] text-3xl uppercase leading-[1.1] tracking-[0.15em] md:text-4xl">
             Formasi Magang
@@ -42,11 +43,14 @@ export default async function Positions() {
           </div>
         ) : (
           <div className="mt-14 grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-3 lg:grid-cols-4">
-            {positions?.map((position) => (
-              <article
+            {positions?.map((position, index) => (
+              <ScrollReveal
                 key={position.id}
-                className="flex flex-col items-center text-center"
+                delay={(index % 4) * 100}
+                direction="up"
+                className="h-full"
               >
+                <article className="flex h-full flex-col items-center text-center">
                 <div className="flex h-36 items-center justify-center md:h-44">
                   <Image
                     src={position.image_url}
@@ -61,11 +65,19 @@ export default async function Positions() {
                 <div className="mt-4 flex min-h-20 w-full items-center justify-center rounded-3xl bg-[#38b98b] px-4 py-4 text-center font-[family-name:var(--font-luckiest-guy)] text-sm uppercase leading-tight tracking-wide text-white md:text-xl">
                   {position.title}
                 </div>
-              </article>
+                </article>
+              </ScrollReveal>
             ))}
           </div>
         )}
       </div>
+        <div className="flex h-8 w-full">
+          <div className="w-1/5 bg-[#a67ac1]"/>
+          <div className="w-1/5 bg-[#7895c4]"/>
+          <div className="w-1/5 bg-[#df7478]"/>
+          <div className="w-1/5 bg-[#e9b83f]"/>
+          <div className="w-1/5 bg-[#38b98b]"/>
+        </div>
     </section>
   );
 }

@@ -1,5 +1,5 @@
 import { createClient } from "@/utils/supabase/server";
-
+import ScrollReveal from "@/components/ScrollReveal";
 export default async function Facilities() {
   const supabase = await createClient();
 
@@ -36,15 +36,21 @@ export default async function Facilities() {
           </p>
         ) : (
           <div className="mt-16 space-y-6">
-            {facilities?.map((facility) => (
-              <article
+            {facilities?.map((facility, index) => (
+              <ScrollReveal
                 key={facility.id}
+                delay={(index %3) * 100}
+                direction="up">
+
+              <article
                 className="rounded-3xl bg-[#ffc857] px-6 py-5 text-center shadow-[0_12px_0_#8b3e35] md:px-10"
               >
+                
                 <p className="text-lg font-black text-[#25283d] md:text-2xl">
                   {facility.title}
                 </p>
-              </article>
+                </article>
+              </ScrollReveal>
             ))}
 
             {facilities?.length === 0 && (
