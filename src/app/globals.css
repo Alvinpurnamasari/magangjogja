@@ -111,3 +111,25 @@ html {
   }
 }
 
+@keyframes contactLogoZoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+.contact-logo-zoom {
+  transform-origin: center;
+  animation: contactLogoZoom 2.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-logo-zoom {
+    animation: none;
+  }
+}
