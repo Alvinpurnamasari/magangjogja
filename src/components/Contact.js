@@ -38,6 +38,8 @@ function formatPhone(phone) {
 
 export default function Contact() {
   const textRef = useRef(null);
+  const logoRef = useRef(null);
+  const [logoVisible, setLogoVisible] = useState(false);
 
   const [settings, setSettings] = useState(defaultSettings);
 
@@ -83,6 +85,28 @@ export default function Contact() {
     }
 
     loadContact();
+  }, []);
+
+  useEffect(() => {
+    const logo = logoRef.current;
+  
+    if (!logo) return;
+  
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLogoVisible(true);
+          observer.unobserve(logo);
+        }
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+  
+    observer.observe(logo);
+  
+    return () => observer.disconnect();
   }, []);
 
   function handleMouseMove(event) {
@@ -138,12 +162,14 @@ export default function Contact() {
     >
       <div className="relative z-10 mx-auto max-w-6xl">
         <Image
+          ref={logoRef}
           src={settings.logo_url}
           alt="MagangJogja.com"
           width={552}
           height={63}
           unoptimized
-          className="mx-auto h-auto w-[320px] md:w-[550px] lg:w-[700px]"
+          className={`mx-auto h-auto w-[320px] md:w-[550px] lg:w-[700px] 
+          ${logoVisible ? "contact-logo-show" : "scale-0 opacity"}`}
         />
 
         <div

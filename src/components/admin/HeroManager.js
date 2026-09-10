@@ -109,7 +109,7 @@ export default function HeroManager({ initialSettings }) {
       }
 
       setFiles({});
-      setMessage("Hero berhasil diperbarui.");
+      setMessage("Halaman utama berhasil diperbarui.");
       router.refresh();
     } catch (error) {
       console.error(error);
