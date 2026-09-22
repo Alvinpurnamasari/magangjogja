@@ -29,6 +29,11 @@ const menus = [
     description: "Ubah nomor WhatsApp, alamat, dan logo.",
     href: "/admin/contact",
   },
+  {
+    title: "Pengaturan Akun",
+    description: "Ubah email dan password login admin.",
+    href: "/admin/account",
+  },
 ];
 
 export default async function AdminPage() {
